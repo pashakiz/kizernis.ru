@@ -1,0 +1,127 @@
+$input_bg:                  $bg_light_3;
+$input_hover_bg:            $bg_light_3;
+$input_txt_family:          $font_family;
+$input_txt_color:           $font_color;
+$input_hover_txt_color:     $font_color;
+$input_placeholder_color:   $font_color4;
+$input_txt_xs_size:         16px;
+$input_txt_xs_lh:           1.5;
+$input_txt_size:            22px;
+$input_txt_lh:              1.5;
+$input_border_color:        $bg_light_2;
+$input_border:              2px solid $bg_light_2;
+$input_hover_border:        $input_border;
+$input_hover_focus_outline: 1px solid $bg_light_2;
+$input_border_radius:       0;
+$textarea_border_radius:    0;
+$textarea_border_radius_mob:0;
+
+*::-webkit-input-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+
+.form-control {
+  border: $input_border;
+  background-color: $input_bg;
+  border-radius: $input_border_radius;
+  padding: 12px 20px;
+  color: $input_txt_color;
+  font-family: $input_txt_family;
+  font-size: $input_txt_xs_size;
+  line-height: $input_txt_xs_lh;
+  font-weight: 400;
+  text-align: center;
+  //text-transform: uppercase;
+  &:hover {
+    background-color: $input_hover_bg;
+    color: $input_hover_txt_color;
+    border: $input_hover_border;
+  }
+  &:focus {
+    box-shadow: none;
+    background-color: $input_hover_bg;
+    color: $input_hover_txt_color;
+    border-color: $bg_light_2;
+    outline: $input_hover_focus_outline;
+  }
+  &::placeholder {
+    color: $input_placeholder_color;
+    opacity: 0.7;
+  }
+  &.form-control_error {
+    border-color: $font_color_error;
+    outline-color: $font_color_error
+  }
+  @media (min-width: 1200px) {
+    padding: 18px 32px;
+    font-size: $input_txt_size;
+    line-height: $input_txt_lh;
+  }
+}
+
+input.form-control {
+  height: 48px;
+  @media (min-width: 1200px) {
+    height: 78px;
+  }
+}
+
+textarea.form-control {
+  border-radius: $textarea_border_radius_mob;
+  min-height: 100px;
+  @media (min-width: 768px) {
+    height: 100px;
+  }
+  @media (min-width: 1200px) {
+    border-radius: $textarea_border_radius;
+    height: 117px;
+  }
+}
+
+.custom-file {
+  display: block;
+  width: 216px;
+  height: auto;
+  position: relative;
+  @media (min-width: 768px) {
+    width: 216px;
+  }
+  @media (min-width: 1200px) {
+    width: 380px;
+  }
+
+  .custom-file-input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    margin: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .custom-file-area {
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}

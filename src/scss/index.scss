@@ -1,0 +1,243 @@
+.block {
+  padding: 45px 0;
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
+}
+
+.block__inner {
+  @media (min-width: 1650px) {
+    padding: 0 110px;
+  }
+}
+
+.block__inner_left {
+  @media (min-width: 1650px) {
+    padding: 0 0 0 110px;
+  }
+}
+
+.block_light {
+  background-color: $bg_light_1;
+}
+
+.video {
+  @media (min-width: 1200px) {
+    padding: 113px 0 117px;
+  }
+}
+
+.categories {
+  @media (min-width: 1200px) {
+    padding: 106px 0;
+  }
+}
+
+.blog {
+  @media (min-width: 1200px) {
+    padding: 113px 0 100px;
+  }
+}
+
+.video__info {
+  @media (min-width: 1200px) {
+    max-width: 448px;
+  }
+  @media (min-width: 1400px) {
+    max-widthwidth: 529px;
+  }
+}
+
+.vitem {
+  width: 248px;
+  text-decoration: none !important;
+  @media (min-width: 1200px) {
+    width: 540px;
+  }
+  @media (min-width: 1400px) {
+    width: 578px;
+  }
+}
+
+.vitem__img {
+  width: 248px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+    .vitem__icon {
+      color: $btn_bg_color_hover;
+      fill: $btn_bg_color_hover;
+    }
+  }
+  @media (min-width: 1200px) {
+    width: 540px;
+    height: 390px;
+  }
+  @media (min-width: 1400px) {
+    width: 578px;
+    height: 420px;
+  }
+}
+
+.vitem__icon {
+  width: 42px;
+  height: 41px;
+  color: $bg_light_1;
+  background-image: url('../img/icons/play.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  @media (min-width: 1200px) {
+    width: 101px;
+    height: 100px;
+  }
+}
+
+.vitem__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 0 0;
+  @media (min-width: 1200px) {
+    padding: 19px 0 0;
+  }
+}
+
+.vitem__name {
+  font-weight: 900;
+  color: $bg_light_1;
+  font-size: 14px;
+  margin: 0 17px 0 0;
+  @media (min-width: 1200px) {
+    margin: 0 22px 0 0;
+    font-size: 22px;
+  }
+}
+
+.vitem__loc {
+  font-weight: 400;
+  color: $font_color4;
+  font-size: 13px;
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
+}
+
+.splide {
+  &.splide_vitems {
+    margin: 34px 0 0;
+    @media (min-width: 1200px) {
+      margin: 0 0 0 40px;
+    }
+    @media (min-width: 1400px) {
+      margin: 0 0 0 40px;
+    }
+    @media (min-width: 1650px) {
+      margin: 0 0 0 17px;
+    }
+  }
+}
+
+.category {
+  display: block;
+  text-align: center;
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.category__link {
+  font-size: 14px;
+  line-height: 21px;
+  color: $bg_dark_1;
+  text-transform: uppercase;
+  text-decoration: underline;
+  @media (min-width: 1200px) {
+    font-size: 22px;
+    line-height: 38px;
+  }
+}
+
+.category__btn {
+  width: 100% !important;
+  margin: 30px auto 0;
+  @media (min-width: 400px) {
+    width: 280px !important;
+  }
+}
+
+.blogpost {
+  display: block;
+  max-width: 280px;
+  margin: 0 auto 40px;
+  text-decoration: none !important;
+  transition: transform .3s ease-out;
+  &:hover {
+    //opacity: 0.8;
+    transform: scale(1.05);
+  }
+  @media (min-width: 1200px) {
+    max-width: 325px;
+    margin: 0;
+  }
+  @media (min-width: 1400px) {
+    max-width: 390px;
+  }
+  @media (min-width: 1650px) {
+    max-width: 433px;
+  }
+}
+
+.blogpost__img {
+  width: 280px;
+  height: 195px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 22px;
+  margin: 0 0 27px 0;
+  @media (min-width: 1200px) {
+    width: 325px;
+    height: 200px;
+  }
+  @media (min-width: 1400px) {
+    width: 390px;
+    height: 240px;
+  }
+  @media (min-width: 1650px) {
+    width: 433px;
+    height: 265px;
+  }
+}
+
+.blogpost__title {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 900;
+  color: $bg_light_1;
+  margin: 0 0 10px 0;
+  @media (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 12px 0;
+  }
+}
+
+.blogpost__text {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font_color2;
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
