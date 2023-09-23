@@ -15,3 +15,9 @@
 .block_shadow {
     background-color: #1c1e22;
 }
+a {
+  color: orange;
+}
+a:hover {
+  color: orange;
+}
