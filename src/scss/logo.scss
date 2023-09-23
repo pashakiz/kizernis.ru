@@ -1,12 +1,33 @@
 .logo {
-  width: 40px;
-  height: 36px;
-  background-image: url('../img/icons/logo.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 100%;
+  display: block;
+  margin: 0 6px 0 0;
   @media (min-width: 992px) {
-    width: 43px;
-    height: 38px;
+    margin: 0 15px 0 0;
+  }
+}
+
+.logo__icon {
+  color: orange;
+  width: 20px;
+  height: 20px;
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.logo_footer {
+  margin: 0 5px 0 0;
+  @media (min-width: 992px) {
+    margin: 0 8px 0 0;
+  }
+  .logo__icon {
+    color: #7f8081;
+    width: 16px;
+    height: 16px;
+    @media (min-width: 768px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

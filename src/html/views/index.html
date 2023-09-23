@@ -1,249 +1,89 @@
 <%= _.template(require('./../includes/header.html'))() %>
 
-  <div id="page-preloader" class="preloader">
-    <div class="loader"></div>
-  </div>
-
-  <main class="main">
-    <header class="header">
-      <div class="container">
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="logo"></div>
-        </div>
-        <h1>Who are you looking&nbsp;<br class="d-lg-none">for today?</h1>
-      </div>
-      <div class="choose-wrap">
-        <div class="choose choose_1">
-          <div class="choice">
-            <div class="choice__img" style="background-image: url('assets/img/photos/female-01.jpg')"></div>
-            <div class="choice__name">Ksenia, 32</div>
-            <div class="choice__loc">Miami, USA</div>
-            <button type="button" class="btn btn_1" data-bs-toggle="modal" data-bs-target="#unlock">Female</button>
+<div id="page-content">
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="header__logo col-10">
+          <div class="logo">
+            <svg class="logo__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclude" viewBox="0 0 16 16">
+              <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm12 2H5a1 1 0 0 0-1 1v7h7a1 1 0 0 0 1-1V4z"/>
+            </svg>
           </div>
-          <div class="choice">
-            <div class="choice__img" style="background-image: url('assets/img/photos/male-01.jpg')"></div>
-            <div class="choice__name">David, 42</div>
-            <div class="choice__loc">Miami, USA</div>
-            <button type="button" class="btn btn_1" data-bs-toggle="modal" data-bs-target="#unlock">Male</button>
+          <div class="header__title">
+            <h1><span class="psylabel">Психолог</span> Павел Кизернис</h1>
           </div>
         </div>
-        <div class="choose choose_2">
-          <div class="choice">
-            <div class="choice__img" style="background-image: url('assets/img/photos/female-02.jpg')"></div>
-            <div class="choice__name">Ksenia, 32</div>
-            <div class="choice__loc">Miami, USA</div>
-            <button type="button" class="btn btn_1" data-bs-toggle="modal" data-bs-target="#unlock">Female</button>
-          </div>
-          <div class="choice">
-            <div class="choice__img" style="background-image: url('assets/img/photos/male-02.jpg')"></div>
-            <div class="choice__name">David, 42</div>
-            <div class="choice__loc">Miami, USA</div>
-            <button type="button" class="btn btn_1" data-bs-toggle="modal" data-bs-target="#unlock">Male</button>
-          </div>
-        </div>
-        <div class="choose choose_3">
-          <div class="choice">
-            <div class="choice__img" style="background-image: url('assets/img/photos/female-03.jpg')"></div>
-            <div class="choice__name">Ksenia, 32</div>
-            <div class="choice__loc">Miami, USA</div>
-            <button type="button" class="btn btn_1" data-bs-toggle="modal" data-bs-target="#unlock">Female</button>
-          </div>
-          <div class="choice">
-            <div class="choice__img" style="background-image: url('assets/img/photos/male-03.jpg')"></div>
-            <div class="choice__name">David, 42</div>
-            <div class="choice__loc">Miami, USA</div>
-            <button type="button" class="btn btn_1" data-bs-toggle="modal" data-bs-target="#unlock">Male</button>
-          </div>
-        </div>
-        <div class="choose choose_4">
-          <div class="choice">
-            <div class="choice__img" style="background-image: url('assets/img/photos/female-04.jpg')"></div>
-            <div class="choice__name">Ksenia, 32</div>
-            <div class="choice__loc">Miami, USA</div>
-            <button type="button" class="btn btn_1" data-bs-toggle="modal" data-bs-target="#unlock">Female</button>
-          </div>
-          <div class="choice">
-            <div class="choice__img" style="background-image: url('assets/img/photos/male-04.jpg')"></div>
-            <div class="choice__name">David, 42</div>
-            <div class="choice__loc">Miami, USA</div>
-            <button type="button" class="btn btn_1" data-bs-toggle="modal" data-bs-target="#unlock">Male</button>
-          </div>
-        </div>
-        <div class="choose choose_5">
-          <div class="choice">
-            <div class="choice__img" style="background-image: url('assets/img/photos/female-05.jpg')"></div>
-            <div class="choice__name">Ksenia, 32</div>
-            <div class="choice__loc">Miami, USA</div>
-            <button type="button" class="btn btn_1" data-bs-toggle="modal" data-bs-target="#unlock">Female</button>
-          </div>
-          <div class="choice">
-            <div class="choice__img" style="background-image: url('assets/img/photos/male-05.jpg')"></div>
-            <div class="choice__name">David, 42</div>
-            <div class="choice__loc">Miami, USA</div>
-            <button type="button" class="btn btn_1" data-bs-toggle="modal" data-bs-target="#unlock">Male</button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="block video">
-      <div class="container">
-        <div class="block__inner_left">
-          <div class="row">
-            <div class="col-12 col-xl-5">
-              <div class="video__info">
-                <h2>Video shows from members</h2>
-                <p>In a world where technology has transformed the way we connect, finding love can feel overwhelming. But fear not! Our dating site is here to simplify your journey to finding the one. With our user-friendly interface and advanced matching algorithm</p>
-                <a href="#" class="btn btn_3">Discover more</a>
-              </div>
-            </div>
-            <div class="col-12 col-xl-7">
-              <div class="splide splide_vitems" aria-label="Profile photos">
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <a class="vitem" href="#">
-                        <div class="vitem__img" style="background-image: url('assets/img/photos/vid01.jpg');">
-                          <svg class="vitem__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 101 100">
-                            <path fill="currentColor" d="M61.15.03H40.16C18.67.03.68 18.02.68 39.5v20.48c0 22 18 39.98 39.48 39.98h20.49c21.99 0 39.48-17.99 39.48-39.48V39.51C100.63 18 82.63.03 61.15.03Zm29.48 60.46a29.54 29.54 0 0 1-29.48 29.49H40.16c-15.99 0-29.48-13.5-29.48-29.49V39.51c0-16 13.49-29.49 29.48-29.49h20.49c16.49 0 29.98 13.5 29.98 29.49v20.98Z"/>
-                            <path fill="currentColor" d="m40.66 65 24.99-15-24.99-15v30Z"/>
-                          </svg>
-                        </div>
-                        <div class="vitem__row">
-                          <div class="vitem__name">Ksenia, 32</div>
-                          <div class="vitem__loc">Miami, USA</div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="splide__slide">
-                      <a class="vitem" href="#">
-                        <div class="vitem__img" style="background-image: url('assets/img/photos/vid02.jpg');">
-                          <svg class="vitem__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 101 100">
-                            <path fill="currentColor" d="M61.15.03H40.16C18.67.03.68 18.02.68 39.5v20.48c0 22 18 39.98 39.48 39.98h20.49c21.99 0 39.48-17.99 39.48-39.48V39.51C100.63 18 82.63.03 61.15.03Zm29.48 60.46a29.54 29.54 0 0 1-29.48 29.49H40.16c-15.99 0-29.48-13.5-29.48-29.49V39.51c0-16 13.49-29.49 29.48-29.49h20.49c16.49 0 29.98 13.5 29.98 29.49v20.98Z"/>
-                            <path fill="currentColor" d="m40.66 65 24.99-15-24.99-15v30Z"/>
-                          </svg>
-                        </div>
-                        <div class="vitem__row">
-                          <div class="vitem__name">Ksenia, 32</div>
-                          <div class="vitem__loc">Miami, USA</div>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        <div class="header__action col-2 text-right">
+          <div class="cssmode">
+            <div class="cssmode__icon">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+              </svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <section class="block block_light categories">
-      <div class="container">
-        <div class="block__inner">
-          <div class="row">
-            <div class="col">
-              <h2 class="h2_dark">The most popular categories</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-xl-3">
-              <div class="category">
-                <a href="#" class="category__link">International dating</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">Professional dating</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">Senior dating</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">Anonymous dating</a>
-              </div>
-            </div>
-            <div class="col-12 col-xl-3">
-              <div class="category">
-                <a href="#" class="category__link">Over 40 dating</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">Over 50 dating</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">Over 60 dating</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">Widower dating</a>
-              </div>
-            </div>
-            <div class="col-12 col-xl-3 d-none d-xl-block category__hide">
-              <div class="category">
-                <a href="#" class="category__link">Childfree dating</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">Parents dating</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">Divorced dating</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">Catholic dating</a>
-              </div>
-            </div>
-            <div class="col-12 col-xl-3 d-none d-xl-block category__hide">
-              <div class="category">
-                <a href="#" class="category__link">Online chat dating</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">Flirty chat</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">International chat</a>
-              </div>
-              <div class="category">
-                <a href="#" class="category__link">Christian chat</a>
-              </div>
-            </div>
-          </div>
-          <button class="btn btn_1 category__btn d-xl-none">Open all</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="block blog">
-      <div class="container">
-        <div class="block__inner_left">
-          <div class="row">
-            <div class="col">
-              <h2>Dream single blog</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-xl-4">
-              <a href="#" class="blogpost">
-                <div class="blogpost__img" style="background-image: url('assets/img/photos/blog01.jpg');"></div>
-                <div class="blogpost__title">Navigating the Modern Dating Landscape: Our Platform Makes It Easy</div>
-                <div class="blogpost__text">In a world where technology has transformed the way we connect, finding love can feel overwhelming. But fear not! Our dating site is here to simplify your journey to finding the one.</div>
-              </a>
-            </div>
-            <div class="col-12 col-xl-4">
-              <a href="#" class="blogpost">
-                <div class="blogpost__img" style="background-image: url('assets/img/photos/blog02.jpg');"></div>
-                <div class="blogpost__title">Unlock the Secrets to a Stellar Dating Profile: Stand Out from the Crowd</div>
-                <div class="blogpost__text">In a world where technology has transformed the way we connect, finding love can feel overwhelming. But fear not! Our dating site is here to simplify your journey to finding the one.</div>
-              </a>
-            </div>
-            <div class="col-12 col-xl-4">
-              <a href="#" class="blogpost">
-                <div class="blogpost__img" style="background-image: url('assets/img/photos/blog03.jpg');"></div>
-                <div class="blogpost__title">Love Without Borders: Expand Your Dating Horizons</div>
-                <div class="blogpost__text">Distance should never be a barrier to love. That's why our dating site goes beyond geographical boundaries, connecting singles from around the world.</div>
-              </a>
-            </div>
+  <section class="block">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="aboutphoto">
+            <img src="assets/img/pavel.jpg" alt="Photo">
           </div>
         </div>
+        <div class="col-12 col-md-8">
+          <p>Мне правда интересны люди...</p>
+          <p>По первой своей профессии я программист, что характеризует меня, как человека с аналитическим складом ума.</p>
+          <p>По второй своей профессии я психолог (в гештальт подходе), что позволило мне развить в себе чувствительность и креативность.</p>
+          <p>В совокупности я могу быть одновременно полезен, как в подробном разборе и осознании сложных жизненных ситуаций, так и в сопереживании и поиске нестандартных решений.</p>
+          <p>От меня можно ожидать искренней, прямолинейной и честной обратной связи (которую порой невозможно получить от самых близких людей).</p>
+          <p>В то же время я довольно чуток и внимателен, так как для меня важны доверие и безопасность.</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <section class="block block_shadow">
+    <div class="container">
+      <p>Чего от меня ожидать не стоит:</p>
+      <ul>
+        <li>неискренней лести и прочих реверансов;</li>
+        <li>волшебной таблетки или пенделя;</li>
+        <li>"излечения" за 1-2 встречи.</li>
+      </ul>
+      <p>Темы, с которым я часто сталкиваюсь в работе:</p>
+      <ul>
+        <li>самооценка;</li>
+        <li>сложности в отношениях (семья, работа, дружба);</li>
+        <li>горе от утраты;</li>
+        <li>нарушения пищевого поведения;</li>
+        <li>проживание развода/расставания;</li>
+        <li>фобии/страхи;</li>
+      </ul>
+      <p>В том числе работаю и с семейными парами. В данном случае работаю в паре с коллегой (женщиной). Как показывает практика в таком формате обоим супругам проще найти гарантированную опору и понимание.</p>
+      <p>Принимаю очно в г. Донецк (<a href="https://yandex.ru/maps/-/CDU7YL4J" target="_blank">площадь Конституции, 1, Дом быта «Кальмиус»</a>) или онлайн (по видеосвязи).</p>
+    </div>
+  </section>
+
+  <section class="block" style="margin-bottom: 1rem;">
+    <div class="container text-center">
+      <h3>Для записи на консультацию:
+        <br>звоните: <a href="tel:+79493047071" target="_blank">+79493047071</a>
+        <br>или пишите в телегу: <a href="https://t.me/pashakiz" target="_blank">@pashakiz</a>
+      </h3>
+    </div>
+  </section>
+</div>
 
 <%= _.template(require('./../includes/footer.html'))() %>
+
+</body>
+</html>

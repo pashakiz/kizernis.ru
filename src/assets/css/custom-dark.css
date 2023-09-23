@@ -1,0 +1,17 @@
+.header {
+    border-bottom: 1px solid #1c1e22;
+}
+.logo {
+    color: #fff;
+}
+.mainav>ul>li a {
+    color: rgba(255, 255, 255, 0.5);
+}
+.mainav>ul>li:hover a,
+.mainav>ul>li.active a {
+    color: #fff;
+    text-decoration: none;
+}
+.block_shadow {
+    background-color: #1c1e22;
+}
