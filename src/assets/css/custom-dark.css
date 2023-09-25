@@ -21,3 +21,6 @@ a {
 a:hover {
   color: orange;
 }
+.price:hover {
+  background-color: rgba(28,30,34, 0.3);
+}

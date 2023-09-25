@@ -156,7 +156,7 @@ h3 {
   margin-bottom: 10px;
   line-height: 1.5;
   @media (min-width: 992px) {
-    margin: 0;
+    margin: 0 0 5px 0;
   }
 }
 
@@ -198,3 +198,52 @@ a.contactlnk__item:hover {
   vertical-align: middle;
 }
 
+.price-wrap {
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: 992px) {
+    max-width: 600px;
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px 10px 10px 10px;
+}
+
+.price__info {
+  padding: 0 15px 0 0;
+  @media (min-width: 400px) {
+    padding: 0 10px 0 0;
+  }
+}
+
+.price__value {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.price__title {
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  @media (min-width: 576px) {
+    line-height: 1.5;
+  }
+}
+
+.price__descr {
+  font-size: 14px;
+  @media (min-width: 576px) {
+    font-size: 1rem;
+  }
+}
+
+br.price__descr_br {
+  display: none;
+  @media (min-width: 460px) {
+    display: block;
+  }
+}
