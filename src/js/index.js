@@ -11,6 +11,13 @@ let themeSwitchIcon = document.querySelector('.cssmode__icon');
 let themeSwitchIconSun = themeSwitchIcon.querySelector('.icon-sun');
 let themeSwitchIconMoon = themeSwitchIcon.querySelector('.icon-moon');
 let userTheme = localStorage.getItem('userTheme');
+const startYear = 2019;
+const currentYear = new Date().getFullYear();
+let footerText = '&copy; 2019 Павел Кизернис | Психолог | Гештальт-терапевт';
+
+if (currentYear > startYear && currentYear > 2022)
+  footerText = '&copy; 2019-' + currentYear + ' Павел Кизернис | Психолог | Гештальт-терапевт';
+document.querySelector('.footer__text').innerHTML = footerText;
 
 const turnLightTheme = () => {
   document.querySelector('html').classList.remove('themedark');
