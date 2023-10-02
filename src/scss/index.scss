@@ -102,9 +102,15 @@ body {
   padding: 2rem 0;
 }
 
-.aboutphoto {
-  width: 200px;
-  height: 200px;
+.firstscreen {
+  @media (min-width: 992px) {
+    align-items: center;
+  }
+}
+
+.firstscreen__aboutphoto {
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 20px;
@@ -114,15 +120,21 @@ body {
     margin: auto;
   }
   @media (min-width: 992px) {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
+  }
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
-.aboutphoto > img {
-  width: 100%;
-  height: auto;
+.firstscreen__text {
+  p:last-child {
+    margin: 0;
+  }
 }
+
 
 h1 {
   font-size: 1.5rem;
