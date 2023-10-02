@@ -13,10 +13,11 @@ let themeSwitchIconMoon = themeSwitchIcon.querySelector('.icon-moon');
 let userTheme = localStorage.getItem('userTheme');
 const startYear = 2019;
 const currentYear = new Date().getFullYear();
-let footerText = '&copy; 2019 Павел Кизернис | Психолог | Гештальт-терапевт';
+const INN = ' | ИНН: 616523749790';
+let footerText = '&copy; 2019 Павел Кизернис | Психолог <br class="footer__text_br"><span class="footer__text_sep">|</span> Гештальт-терапевт' + INN;
 
 if (currentYear > startYear && currentYear > 2022)
-  footerText = '&copy; 2019-' + currentYear + ' Павел Кизернис | Психолог | Гештальт-терапевт';
+  footerText = '&copy; 2019-' + currentYear + ' Павел Кизернис | Психолог <br class="footer__text_br"><span class="footer__text_sep">|</span> Гештальт-терапевт' + INN;
 document.querySelector('.footer__text').innerHTML = footerText;
 
 const turnLightTheme = () => {

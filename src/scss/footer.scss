@@ -32,6 +32,18 @@
   }
 }
 
+.footer__text_br {
+  @media (min-width: 440px) {
+    display: none;
+  }
+}
+.footer__text_sep {
+  display: none;
+  @media (min-width: 440px) {
+    display: inline;
+  }
+}
+
 .links {
   display: flex;
   align-items: center;

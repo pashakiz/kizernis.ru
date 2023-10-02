@@ -23,8 +23,12 @@
   }
   .logo__icon {
     color: #7f8081;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
+    @media (min-width: 440px) {
+      width: 16px;
+      height: 16px;
+    }
     @media (min-width: 768px) {
       width: 20px;
       height: 20px;
