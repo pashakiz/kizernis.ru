@@ -275,3 +275,40 @@ br.price__descr_br {
     display: block;
   }
 }
+
+.certs {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  .cert {
+    display: block;
+    padding: 0 5px 5px;
+    width: 86px;
+    height: 54px;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @media (min-width: 576px) {
+    .cert {
+      padding: 0 10px 10px;
+      width: 100px;
+      height: 56px;
+    }
+  }
+  @media (min-width: 768px) {
+    .cert {
+      width: 170px;
+      height: 106px;
+    }
+  }
+  @media (min-width: 992px) {
+    .cert {
+      padding: 0 17px 17px;
+      width: 250px;
+      height: 152px;
+    }
+  }
+}
