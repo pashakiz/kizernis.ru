@@ -149,6 +149,29 @@ body {
   }
 }
 
+.article-photo-sq {
+  margin: 0 auto 30px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.authors-line {
+  margin-bottom: 30px;
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .author-line {
+    &.author-line_text-end {
+      @media (min-width: 992px) {
+        text-align: right;
+      }
+    }
+  }
+}
+
 .firstscreen__text {
   p:last-child {
     margin: 0;
