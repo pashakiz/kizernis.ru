@@ -1,4 +1,8 @@
-<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/header.html'))({
+  title: title,
+  description: description,
+  keywords: keywords
+}) %>
 
 <section class="block">
   <div class="container">
@@ -32,7 +36,7 @@
     <p>Группа будет проходить по субботам, 2 раза в месяц. <a href="https://t.me/pashakiz_blog/57" target="_blank">Подробнее...</a></p>
     <h3>Ведущие:</h3>
     <div class="article-photo-sq">
-      <img src="assets/img/pavel-alex.jpg" alt="Photo">
+      <img src="assets/img/pavel-alex.jpg" alt="Павел Кизернис и Алексей Забирко — гештальт-терапевты, ведущие мужской группы">
     </div>
     <div class="authors-line">
       <div class="author-line">
